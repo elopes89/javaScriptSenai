@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AVALIATIVA</title>
+
+    <link rel="shortcut icon" href="favicon.ico">
+</head>
+
+
+<body>
+
+    <font face="arial">
+        <center> <br> <br>
+
+            <h1>SISTEMA DE NOTAS / MÉDIA</h1>
+            <h2>BOLETIM</h2>
+
+            <style>
+                body {
+                    color: white;
+                    background-color: blueviolet;
+                }
+            </style>
+
+            <label>ATIVIDADE 1</label>
+            <input id="ativ0" type="text">
+            <label> PESO </label>
+            <input id="peso0" type="number" min="0" max="5">
+            <label>NOTA</label>
+            <input id="nota0" type="number" min="0" max="10"> <br><br>
+
+            <label>ATIVIDADE 2</label>
+            <input id="ativ1" type="text">
+            <label> PESO </label>
+            <input id="peso1" type="number" min="0" max="5">
+            <label>NOTA</label>
+            <input id="nota1" type="number" min="0" max="10"> <br><br>
+
+            <label>ATIVIDADE 3</label>
+            <input id="ativ2" type="text">
+            <label> PESO </label>
+            <input id="peso2" type="number" min="0" max="5">
+            <label>NOTA</label>
+            <input id="nota2" type="number" min="0" max="10"> <br><br>
+
+            <label>ATIVIDADE 4</label>
+            <input id="ativ3" type="text">
+            <label> PESO </label>
+            <input id="peso3" type="number" min="0" max="5">
+            <label>NOTA</label>
+            <input id="nota3" type="number" min="0" max="10"> <br><br>
+
+            <label>ATIVIDADE 5</label>
+            <input id="ativ4" type="text">
+            <label> PESO </label>
+            <input id="peso4" type="number" min="0" max="5">
+            <label>NOTA</label>
+            <input id="nota4" type="number" min="0" max="10"> <br><br>
+
+
+
+            <button onclick="GerarMedia()">GERAR MÉDIA</button>
+            <button onclick="Limpar()">LIMPAR DADOS</button> <br><br>
+
+
+
+            <label>MÉDIA</label>
+            <input id="media" readonly="readonly">
+
+            <label>RESULTADO</label>
+            <input id="resultado" readonly="readonly">
+            <script src="avaliativa.js"></script>
+
+
+
+
+
+
+    </font>
+
+</body>
+
+</html>
