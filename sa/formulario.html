@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-Br>
+
+<head>
+    <meta charset=" UTF-8 ">
+    <meta http-equiv="X-UA-Compatible " content="IE=edge ">
+    <meta name="viewport " content="width=device-width, initial-scale=1.0 ">
+    <title>Formulário</title>
+
+<link rel="shortcut icon "href="https://ava.sesisenai.org.br/theme/image.php/boost/theme/1632918963/favicon ">
+
+    <script>
+        var vcorf, vcort, vnome
+
+        function Gravar() {
+            vnome = document.getElementById("fnome ").value
+            localStorage.corf = vcorf
+            localStorage.cort = vcort
+            localStorage.nome = vnome
+        }
+
+        function DefineCor(op, cor) {
+            if (op == 1) {
+                document.body.style.backgroundColor = cor
+                vcorf = cor
+            } else {
+                document.body.style.color = cor
+                vcort = cor
+
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <!-- MUDANDO A COR DO FUNDO E DO TEXTO NA TELA -->
+    <p>LocalStorage Curso</p>
+
+    <form name="dados ">
+        <label>Nome:</label><br>
+        <input type="text " name="fnome " id="fnome " size="20 "><br>
+        <label>Cor fundo:</label><br>
+        <input type="radio " name="fcorF " onclick="DefineCor(1, '#000') ">Preto <br>
+        <input type="radio " name="fcorF " onclick="DefineCor(1, '#fff') ">Branco <br>
+        <input type="radio " name="fcorF " onclick="DefineCor(1, '#f00') ">Vermelho<br>
+        <input type="radio " name="fcorF " onclick="DefineCor(1, '#0f0') ">Verde <br>
+        <input type="radio " name="fcorF " onclick="DefineCor(1, '#00f') ">Azul <br>
+
+        <label> Cor texto:</label><br>
+        <input type="radio " name="fcorT " onclick="DefineCor(2, '#000') ">Preto <br>
+        <input type="radio " name="fcort " onclick="DefineCor(2, '#fff') ">Branco <br><br>
+
+        <input type="button " value="Gravar " onclick="Gravar() ">
+
+
+    </form>
+
+</body>
+
+</html>
